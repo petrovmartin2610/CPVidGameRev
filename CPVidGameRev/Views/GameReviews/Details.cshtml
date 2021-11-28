@@ -1,0 +1,58 @@
+﻿@model CPVidGameRev.Models.GameReview
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>GameReview</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GameTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GameTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeAdded)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeAdded)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReviewScore)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReviewScore)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReviewContent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReviewContent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Reviewer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Reviewer)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
