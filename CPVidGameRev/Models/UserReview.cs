@@ -6,6 +6,7 @@ using System.Web;
 
 namespace CPVidGameRev.Models
 {
+    //USER REVIEWS
     public class UserReview
     {
         public int Id { get; set; }
@@ -17,5 +18,6 @@ namespace CPVidGameRev.Models
         public string ReviewContent { get; set; }
         public double UserReviewScore { get; set; }
         public int NumberOfReviewedGames { get; set; }
+        //number of reviewed games for that user.
     }
 }

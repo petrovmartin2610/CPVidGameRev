@@ -14,6 +14,7 @@ namespace CPVidGameRev.Models
         public string Genre { get; set; }
         public DateTime TimeAdded { get; set; }
         public double AverageUserRating { get; set; }
+        //average rating of min and max
         public double MaxUserRating { get; set; }
         public double MinUserRating { get; set; }
     }

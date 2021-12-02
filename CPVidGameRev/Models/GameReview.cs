@@ -6,6 +6,7 @@ using System.Web;
 
 namespace CPVidGameRev.Models
 {
+    //MEDIA OUTLET REVIEWS
     public class GameReview
     {
         public int Id { get; set; }
@@ -19,5 +20,6 @@ namespace CPVidGameRev.Models
         [StringLength(10000, ErrorMessage = "Review must not contain more than 10000 symbols!")]
         public string ReviewContent { get; set; }
         public string Reviewer { get; set; }
+        //review by a media outlet, like IGN, GameSpot, Kotaku etc
     }
 }
